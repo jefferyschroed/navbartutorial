@@ -1,0 +1,56 @@
+body {
+    background-color: #323232;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 3rem);
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 2rem;
+}
+
+.nav-text {
+    font-family: laro;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    margin-left: -1rem;
+}
+
+
+.shop {
+    font-family: laro;
+    font-weight: 600;
+    font-size: 2rem;
+    background-image: linear-gradient(to bottom, blue, lightblue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 35em) {
+    nav {
+        position: fixed;
+        inset: 0 0 0 30%;
+        background: black;
+    }
+    .flex {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
